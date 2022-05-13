@@ -1,0 +1,23 @@
+name:
+steps:
+  - name: shopid不存在获取get_follow_prize_campaign
+    api:
+      request:
+        url: /get_follow_prize_campaign?shopid=123333337432325
+        method: GET
+        headers: {user-agent: Android app Shopee appver=28007 app_type=1, x-api-source: rn}
+        cookies: {"SPC_EC":"eFBJQjcxV0xyQVlhR3dyTiS3NSp+n64+MUgHAkuWkpU9I3OdGURQX5/zA+GImOjNAJ650CmDgpYOwUX05oLCD5xnRB5OcQtNj5zLwB4T5mwbecKxl+htfLksOCa9crCQH5jusILF9pNotCMQm/L2a2eHVoZsOrCMykRCiXq+/tA="}
+      response:
+        status_code: 200
+        json: {"data":null,"error":0,"error_msg":""}
+  - name: shopid格式异常获取get_follow_prize_campaign
+    api:
+      request:
+        url: /get_follow_prize_campaign?shopid=qwer
+        method: GET
+        headers: {user-agent: Android app Shopee appver=28007 app_type=1, x-api-source: rn}
+        cookies: {"SPC_EC":"eFBJQjcxV0xyQVlhR3dyTiS3NSp+n64+MUgHAkuWkpU9I3OdGURQX5/zA+GImOjNAJ650CmDgpYOwUX05oLCD5xnRB5OcQtNj5zLwB4T5mwbecKxl+htfLksOCa9crCQH5jusILF9pNotCMQm/L2a2eHVoZsOrCMykRCiXq+/tA="}
+      response:
+        status_code: 406
+        json: {"error":"error_params"}
+

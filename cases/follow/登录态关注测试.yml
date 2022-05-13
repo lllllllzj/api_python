@@ -1,0 +1,13 @@
+name:
+steps:
+  - name: follow
+    api:
+      request:
+        url: /follow
+        method: POST
+        cookies: {"SPC_EC":"S3VRdld1RmZ3N05yMkFUcUf7NNhY3mrrEL5gQSwzYKM/p5301QxFlx9UbuP9VvvYsoI1SEB41Si7g1TbUe9V3SRoddVESfX4026Qn/gJTNzfJwtJagvKN6i1wtxCbyDa5LoobbguySsOQLZ/7IhgPg=="}
+        json: {shopid: 7432325}
+      response:
+        status_code: 200
+        json: {"data":{"claim_successful":false,"follow_successful":true},"error":0,"error_msg":""}
+

@@ -1,0 +1,10 @@
+name: 不带参数测试
+steps:
+  - name: 获取template信息
+    api:
+      request:
+        url: /get_template_v2
+        method: GET
+      response:
+        status_code: 200
+        json: {"error":10002,"error_msg":"missing shopid and username"}

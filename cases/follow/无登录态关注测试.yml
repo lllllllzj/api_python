@@ -1,0 +1,12 @@
+name:
+steps:
+    name: follow
+    api:
+      request:
+        url: /follow
+        method: POST
+        json: {shopid: 7432325}
+      response:
+        status_code: 200
+        json: {"data":null,"error":10002,"error_msg":"user not login"}
+

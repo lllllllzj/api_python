@@ -1,0 +1,25 @@
+name:
+steps:
+  - name: shopid异常
+    api:
+      request:
+        url: /follow
+        method: POST
+        cookies: {"SPC_EC":"S3VRdld1RmZ3N05yMkFUcUf7NNhY3mrrEL5gQSwzYKM/p5301QxFlx9UbuP9VvvYsoI1SEB41Si7g1TbUe9V3SRoddVESfX4026Qn/gJTNzfJwtJagvKN6i1wtxCbyDa5LoobbguySsOQLZ/7IhgPg=="}
+        json: {shopid: wert}
+      response:
+        status_code: 200
+        json: {"data":null,"error":114,"error_msg":""}
+
+  - name: shopid不存在
+    api:
+      request:
+        url: /follow
+        method: POST
+        cookies: { "SPC_EC": "S3VRdld1RmZ3N05yMkFUcUf7NNhY3mrrEL5gQSwzYKM/p5301QxFlx9UbuP9VvvYsoI1SEB41Si7g1TbUe9V3SRoddVESfX4026Qn/gJTNzfJwtJagvKN6i1wtxCbyDa5LoobbguySsOQLZ/7IhgPg==" }
+        json: { shopid: 1237432325}
+      response:
+        status_code: 200
+        json: {"data":{"claim_successful":false,"follow_successful":false},"error":1001,"error_msg":"following_shop: invalid shopId: 0: user_activity.follow.follow_user_list: ERROR_PARAM"}
+
+

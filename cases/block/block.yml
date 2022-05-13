@@ -1,0 +1,15 @@
+name:
+steps:
+  - name: block-false
+    api:
+      request:
+        url: /block_user
+        method: POST
+        headers: {user-agent: Android app Shopee appver=28408 app_type=1, x-api-source: rn}
+        cookies: {"SPC_EC":"QzhmM2ducVhzcnR6dW5nWg6PGbfPXan2FahRS2NfZ3zu2ZfGNgKVRGzkHZBMS4bPGSnEBd8TtJTqsyjOE8Nn+To5nfcCZmTRAcYaSBgWf/CIq6v9fNfr5NAMIailnapK25llALZdtMYLaejy8DJYzQ==", SPC_PFB_DISCOVERLANDING_SHOPBFF: wuhui-tech-spmkt-29566-migrate-block-api, SPC_PFB_RN_STATIC: -shopee-rn-shop-origin-yongkang-spmkt-29566-migrate-user-api-to-shopbff-origin-release}
+        json: {"userid":1205317301,"block":false}
+      response:
+        status_code: 200
+        json: {"data":null,"error":0,"error_msg":""}
+
+

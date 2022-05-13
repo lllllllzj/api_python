@@ -1,0 +1,12 @@
+name:
+steps:
+  - name: 获取get_follow_prize_campaign
+    api:
+      request:
+        url: /get_follow_prize_campaign?shopid=7432325
+        method: GET
+        headers: {user-agent: Android app Shopee appver=28007 app_type=1, x-api-source: rn}
+      response:
+        status_code: 200
+        json: {"data":null,"error":6002,"error_msg":"user not login"}
+

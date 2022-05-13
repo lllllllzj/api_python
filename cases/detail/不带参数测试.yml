@@ -1,0 +1,10 @@
+name: 不带参数测试
+steps:
+  - name: 获取template信息
+    api:
+      request:
+        url: /get_shop_detail
+        method: GET
+      response:
+        status_code: 200
+        json: {"error":10002,"error_msg":"missing shop id and shopname","data":null,"version":null}

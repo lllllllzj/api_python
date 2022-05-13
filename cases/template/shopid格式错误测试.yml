@@ -1,0 +1,10 @@
+name:
+steps:
+  - name: 获取template信息
+    api:
+      request:
+        url: /get_template_v2?shopid=wwww
+        method: GET
+      response:
+        status_code: 406
+        json: {"error":"error_params"}

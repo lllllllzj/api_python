@@ -1,0 +1,10 @@
+name: 正常传参测试
+steps:
+  - name: 获取template信息
+    api:
+      request:
+        url: /get_shop_detail?username=myycbsellid
+        method: GET
+      response:
+        status_code: 200
+        json: {"error":0,"error_msg":"","data":{}}
